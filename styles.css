@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header, .footer {
+    background-color: #0f3cc9;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+}
+
+.container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #0f3cc9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#firstButton{
+    background-color: rgb(37,211,102);
+
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.country-code {
+    background-color: #eee;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-right: 1px solid #ccc;
+}
+
+.phone-input input {
+    border: none;
+    flex: 1;
+}
+
+.fa-whatsapp{
+    font-size: 20px;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Message styling */
+.message {
+    display: flex;
+    align-items: center;
+    background-color: #e0f7e0;
+    color: #2d8a2d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.message i {
+    margin-right: 10px;
+}
+
+.fa-check-circle{
+    font-size: 50px;
+}
+
+.whatsapp{
+    font-size: 30px;
+}
+
+/* Button styling */
+.join-btn {
+    background-color: rgb(37,211,102);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* .join-btn:hover {
+    background-color: #ff6347;
+} */
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .message {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .message i {
+        margin: 0 0 10px 0;
+    }
+
+    .join-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    form {
+        gap: 0.5rem;
+    }
+}
